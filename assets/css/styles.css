@@ -1118,15 +1118,36 @@ pre code {
     margin-left: 91.66667%;
   }
 }
+@media (max-width: 480px) {
+  .infos {
+    max-width: 320px;
+  }
+
+  .infos h6.subtitle,
+  .infos h6.title,
+  .infos p {
+    font-size: 16px; /* Adjust the font size as needed */
+  }
+
+  .infos .buttons {
+    margin-top: 10px; /* Add some space between the buttons and the text */
+  }
+
+  .infos .buttons button {
+    font-size: 14px; /* Adjust the button font size */
+  }
+
+  .infos .socials {
+    margin-top: 10px; /* Add some space between the social icons and the text */
+  }
+
+  .infos .socials a {
+    font-size: 20px; /* Adjust the social icon font size */
+  }
+}
+
 
 @media (min-width: 768px) {
-
-  .title {
-    font-size: 24px;
-  }
-  .subtitle {
-    font-size: 18px; 
-  }
   .col-md {
     -webkit-flex-basis: 0;
         -ms-flex-preferred-size: 0;
