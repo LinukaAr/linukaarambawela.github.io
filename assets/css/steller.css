@@ -250,7 +250,7 @@ input {
   overflow: visible;
 }
 .page-footer .socials .social-item {
-  color: var(--gray); /* Change social link color to gray */
+  color: var(--gray); 
 }
 
 button,
@@ -557,7 +557,7 @@ pre code {
 
 @media (min-width: 576px) {
   .container {
-    max-width: 540px;
+    max-width: 500px;
   }
 }
 
@@ -888,6 +888,7 @@ pre code {
 }
 
 @media (min-width: 576px) {
+  
   .col-sm {
     -webkit-flex-basis: 0;
         -ms-flex-preferred-size: 0;
@@ -1119,6 +1120,13 @@ pre code {
 }
 
 @media (min-width: 768px) {
+
+  .title {
+    font-size: 24px;
+  }
+  .subtitle {
+    font-size: 18px; 
+  }
   .col-md {
     -webkit-flex-basis: 0;
         -ms-flex-preferred-size: 0;
