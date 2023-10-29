@@ -32,7 +32,7 @@
                         <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#service">Service</a>
+                        <a class="nav-link" href="#service">Skils</a>
                     </li>                   
                     <li class="nav-item">
                         <a class="nav-link" href="#portfolio">Portfolio</a>
@@ -67,7 +67,9 @@
                 </div>
             </div>              
             <div class="img-holder">
-                <img src="assets/imgs/boy.png" alt="">
+               
+                <img src="assets/imgs/bay1.png" alt="">
+               
             </div>      
         </div>  
 
@@ -151,25 +153,31 @@
 
             <div class="row text-left">
                 <div class="col-sm-6">
-                    <h6 class="mb-3">Photoshop</h6>
+                    <h6 class="mb-3">HTML</h6>
                     <div class="progress">
                         <div class="progress-bar bg-primary" role="progressbar" style="width: 89%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>89%</span></div>
                     </div>
                 </div>
                 <div class="col-sm-6">
-                    <h6 class="mb-3">Web Design</h6>
+                    <h6 class="mb-3">CSS</h6>
                     <div class="progress">
                         <div class="progress-bar bg-primary" role="progressbar" style="width: 83%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>83%</span></div>
                     </div>
                 </div>
                 <div class="col-sm-6">
-                    <h6 class="mb-3">App Design</h6>
+                    <h6 class="mb-3">Java</h6>
                     <div class="progress">
                         <div class="progress-bar bg-primary" role="progressbar" style="width: 95%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>95%</span></div>
                     </div>
                 </div>
                 <div class="col-sm-6">
-                    <h6 class="mb-3">SEO</h6>
+                    <h6 class="mb-3">JavaScript</h6>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>90%</span></div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h6 class="mb-3">SQL</h6>
                     <div class="progress">
                         <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>90%</span></div>
                     </div>
@@ -243,7 +251,7 @@
                         </div>
                     </div>
                     <div class="img-wrapper">
-                        <img src="assets/imgs/folio-6.jpg" alt="">
+                        <img src="123" alt="">
                         <div class="overlay">
                             <div class="overlay-infos">
                                 <h5>Project Title</h5>
@@ -288,21 +296,21 @@
         <div class="container text-center">
             <h6 class="subtitle">Contact</h6>
             <h6 class="section-title mb-4">Get In Touch With Me</h6>
-            <p class="mb-5 pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In alias dignissimos. <br> rerum commodi corrupti, temporibus non quam.</p>
+            <p class="mb-5 pb-4"> <br>.</p>
 
             <div class="contact text-left">
                 <div class="form">
-                    <h6 class="subtitle">Available 24/7</h6>
+                    <h6 class="subtitle"></h6>
                     <h6 class="section-title mb-4">Get In Touch</h6>
-                    <form>
+                    <form onsubmit="sendEmail(); reset(); return false;" >
                         <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required>
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+                            <input type="text" class="form-control" id="name" placeholder="Name" required>
                         </div>
                         <div class="form-group">
-                            <textarea name="contact-message" id="" cols="30" rows="5" class="form-control" placeholder="Message"></textarea>
+                            <textarea name="message" id="" cols="30" rows="5" class="form-control" placeholder="Message"></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary btn-block rounded w-lg">Send Message</button>
                     </form>
@@ -312,21 +320,21 @@
                         <i class="ti-location-pin"></i>
                         <div class="">
                             <h5>Location</h5>
-                            <p> 12345 Fake ST NoWhere AB Country</p>
+                            <p> Galle, Sri LAanka</p>
                         </div>                          
                     </div>
                     <div class="item">
                         <i class="ti-mobile"></i>
                         <div>
                             <h5>Phone Number</h5>
-                            <p>(123) 456-7890</p>
+                            <p>(94) 703911990</p>
                         </div>                          
                     </div>
                     <div class="item">
                         <i class="ti-email"></i>
                         <div class="mb-0">
                             <h5>Email Address</h5>
-                            <p>info@website.com</p>
+                            <p>linukaarambawela@gmail.com</p>
                         </div>
                     </div>
                 </div>                  
@@ -364,6 +372,21 @@
 
     <!-- steller js -->
     <script src="assets/js/steller.js"></script>
-
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                SecureToken: "bccacb3b-a402-403f-af15-68ff06986f8a",
+                To : 'linukahansana@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "New Web Enquiry",
+                Body : "Name: " +document.getElementById("name").value
+                      +"<br> Email: " + document.getElementById("email").value
+                      +"<br> Message: " +document.getElementById("message").value
+                }).then(
+                message => alert("Message Sent Succesfully")
+                );
+        }
+    </script>
 </body>
 </html>
