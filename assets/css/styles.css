@@ -2240,7 +2240,7 @@ pre code {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #495057;
+  color: black;
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ced4da;
@@ -2262,35 +2262,35 @@ pre code {
 }
 
 .form-control:focus {
-  color: #495057;
+  color: #000000;
   background-color: #fff;
   border-color: #ffdfd7;
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(255, 122, 87, 0.25);
+  box-shadow: 0 0 0 0.2rem black;
 }
 
 .form-control::-webkit-input-placeholder {
-  color: #6c757d;
+  color:black;
   opacity: 1;
 }
 
 .form-control::-moz-placeholder {
-  color: #6c757d;
+  color: black;
   opacity: 1;
 }
 
 .form-control:-ms-input-placeholder {
-  color: #6c757d;
+  color: black;
   opacity: 1;
 }
 
 .form-control::-ms-input-placeholder {
-  color: #6c757d;
+  color: black;
   opacity: 1;
 }
 
 .form-control::placeholder {
-  color: #6c757d;
+  color: black;
   opacity: 1;
 }
 
@@ -2300,7 +2300,7 @@ pre code {
 }
 
 select.form-control:focus::-ms-value {
-  color: #495057;
+  color: grey;
   background-color: #fff;
 }
 
@@ -2339,7 +2339,7 @@ select.form-control:focus::-ms-value {
   padding-bottom: 0.65rem;
   margin-bottom: 0;
   line-height: 1.5;
-  color: #495057;
+  color: black;
   background-color: transparent;
   border: solid transparent;
   border-width: 1px 0;
@@ -2459,7 +2459,7 @@ textarea.form-control {
   margin-top: .1rem;
   font-size: 0.875rem;
   line-height: 1.5;
-  color: #212529;
+  color: black;
   background-color: rgba(163, 193, 74, 0.9);
   border-radius: 0.25rem;
 }
@@ -2588,7 +2588,7 @@ textarea.form-control {
 }
 
 .was-validated .form-control:invalid, .form-control.is-invalid {
-  border-color: #F85C70;
+  border-color: black;
   padding-right: calc(1.5em + 1.3rem);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23F85C70' viewBox='-2 -2 7 7'%3e%3cpath stroke='%23F85C70' d='M0 0l3 3m0-3L0 3'/%3e%3ccircle r='.5'/%3e%3ccircle cx='3' r='.5'/%3e%3ccircle cy='3' r='.5'/%3e%3ccircle cx='3' cy='3' r='.5'/%3e%3c/svg%3E");
   background-repeat: no-repeat;
@@ -2597,8 +2597,8 @@ textarea.form-control {
 }
 
 .was-validated .form-control:invalid:focus, .form-control.is-invalid:focus {
-  border-color: #F85C70;
-  box-shadow: 0 0 0 0.2rem rgba(248, 92, 112, 0.25);
+  border-color: blue;
+  box-shadow: 0 0 0 0.2rem black;
 }
 
 .was-validated .form-control:invalid ~ .invalid-feedback,
