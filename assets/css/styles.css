@@ -249,7 +249,7 @@ button,
 input {
   overflow: visible;
 }
-.page-footer .socials .social-item {
+.page-footer .socials .social-item .copyright{
   color: var(--gray); 
 }
 
@@ -909,33 +909,7 @@ pre code {
   margin-left: 91.66667%;
 }
 
-@media (max-width: 480px) {
-  .infos {
-    max-width: 320px;
-  }
 
-  .infos h6.subtitle,
-  .infos h6.title,
-  .infos p {
-    font-size: 16px; /* Adjust the font size as needed */
-  }
-
-  .infos .buttons {
-    margin-top: 10px; /* Add some space between the buttons and the text */
-  }
-
-  .infos .buttons button {
-    font-size: 14px; /* Adjust the button font size */
-  }
-
-  .infos .socials {
-    margin-top: 10px; /* Add some space between the social icons and the text */
-  }
-
-  .infos .socials a {
-    font-size: 20px; /* Adjust the social icon font size */
-  }
-}
 @media (min-width: 576px) {
   
   .col-sm {
@@ -1167,33 +1141,7 @@ pre code {
     margin-left: 91.66667%;
   }
 }
-@media (max-width: 480px) {
-  .infos {
-    max-width: 320px;
-  }
 
-  .infos h6.subtitle,
-  .infos h6.title,
-  .infos p {
-    font-size: 16px; /* Adjust the font size as needed */
-  }
-
-  .infos .buttons {
-    margin-top: 10px; /* Add some space between the buttons and the text */
-  }
-
-  .infos .buttons button {
-    font-size: 14px; /* Adjust the button font size */
-  }
-
-  .infos .socials {
-    margin-top: 10px; /* Add some space between the social icons and the text */
-  }
-
-  .infos .socials a {
-    font-size: 20px; /* Adjust the social icon font size */
-  }
-}
 
 
 @media (min-width: 768px) {
@@ -2116,6 +2064,14 @@ pre code {
 .table-hover .table-dark:hover {
   background-color: #b9bbbe;
 }
+@media (min-width: 431px) {
+  body {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+}
 
 .table-hover .table-dark:hover > td,
 .table-hover .table-dark:hover > th {
@@ -2843,8 +2799,8 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #212529;
-  background-color: #ff7a57;
-  border-color: #ff7a57;
+  background-color: white;
+  border-color: black;
 }
 
 .btn-primary:hover {
@@ -5887,7 +5843,7 @@ a.badge-dark:focus, a.badge-dark.focus {
   color: #fff;
   text-align: center;
   white-space: nowrap;
-  background-color: #ff7a57;
+  background-color: blue;
   -webkit-transition: width 0.6s ease;
   transition: width 0.6s ease;
 }
@@ -6029,13 +5985,13 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 .bg-primary {
-  background-color: #ff7a57 !important;
+  background-color: black !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
-  background-color: #ff5224 !important;
+  background-color: blue !important;
 }
 
 .bg-secondary {
@@ -10319,12 +10275,12 @@ pre {
   width: 13px;
   height: 13px;
   border-radius: 50%;
-  background: #ff7a57;
+  background: red;
   box-shadow: 0 0 10px rgba(255, 122, 87, 0.5);
 }
 
 .page-footer {
-  background: #fcfdff;
+  background: white;
 }
 
 .page-footer .row {
@@ -10386,7 +10342,7 @@ pre {
 
 .header .container .infos .title {
   margin-bottom: 0px;
-  font-size: 74px;
+  font-size: 50px;
   font-weight: bold;
 }
 
