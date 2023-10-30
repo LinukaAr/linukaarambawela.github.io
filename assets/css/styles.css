@@ -2805,25 +2805,25 @@ fieldset:disabled a.btn {
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #ff5c31;
-  border-color: #ff5224;
+  background-color: white;
+  border-color: black;
 }
 
 .btn-primary:focus, .btn-primary.focus {
-  box-shadow: 0 0 0 0.2rem rgba(222, 109, 80, 0.5);
+  box-shadow: 0 0 0 0.2rem white;
 }
 
 .btn-primary.disabled, .btn-primary:disabled {
   color: #212529;
-  background-color: #ff7a57;
-  border-color: #ff7a57;
+  background-color: white;
+  border-color: black;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
 .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #ff5224;
-  border-color: #ff4817;
+  background-color: white;
+  border-color: black;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
@@ -9948,7 +9948,7 @@ pre {
 }
 
 .img-wrapper .overlay {
-  background: rgba(255, 122, 87, 0.7);
+  background: grey;
   position: absolute;
   left: 0;
   bottom: 100%;
@@ -9993,7 +9993,7 @@ pre {
 
 .img-wrapper .overlay .overlay-infos a:hover {
   background: #fff;
-  color: #ff7a57;
+  color: black;
 }
 
 .img-wrapper:hover .overlay, .img-wrapper:active .overlay {
@@ -10150,11 +10150,11 @@ pre {
   width: 37px;
   height: 37px;
   border-radius: 50%;
-  border: 1px solid #ff7a57;
+  border: 1px solid black;
   line-height: 34px;
   text-align: center;
   padding: 0 !important;
-  color: #ff7a57;
+  color: blcak;
   margin-right: 15px;
 }
 
