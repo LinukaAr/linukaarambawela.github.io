@@ -71,8 +71,11 @@ hr {
   height: 0;
   overflow: visible;
 }
+.position{
+  color: gray;
+}
 h6{
-  color: #d9cbca;
+  color: white;
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
@@ -9893,7 +9896,24 @@ pre {
   display: -webkit-flex;
   display: flex;
 }
-
+.socials .social-item-up {
+  display: block;
+  margin: 0 5px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid white;
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+.social-item-up:hover {
+  background: white;
+  color: black;
+}
 .socials .social-item {
   display: block;
   margin: 0 5px;
