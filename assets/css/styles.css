@@ -61,6 +61,19 @@ body {
 .navbar {
   background-color: #0a0614;
 }
+/* Add motion effect to images in gallery-item on hover */
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  transition: transform 0.3s ease-out;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
 
 [tabindex="-1"]:focus {
   outline: 0 !important;
